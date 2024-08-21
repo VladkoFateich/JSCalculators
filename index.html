@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mathematical calculators and shape calculators</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div id="header__title"></div>
+            <h1 id="title">Калькуляторы</h1>
+        </header>
+        <main id="main">
+            <h2 class="main__title">Калькуляторы фигур на JavaScript</h2>
+            <div class="main__block">
+
+                <div class="main__content">
+                    <aside class="calculator">
+                        <h3 class="calculator__title">Площадь и периметр квадрата.</h3>
+                        <div class="inputs">
+                            <input id="square-input" type="text" value="" placeholder="Ввести размер стороны квадрата">
+
+                        </div>
+                        <div class="answer">Площадь квадрата: <p id="area-square"></p>
+                        </div>
+                        <div class="answer">Периметр квадрата: <p id="perimeter-square"></p>
+                        </div>
+                    </aside>
+                    <aside class="calculator">
+                        <h3 class="calculator__title">Площадь и периметр прямоугольника.</h3>
+                        <div class="inputs">
+                            <input id="rectangle-length" type="text" value="" placeholder="Ввести длину прямоугольника">
+                            <input id="rectangle-height" type="text" value=""
+                                placeholder="Ввести высоту прямоугольника">
+                        </div>
+                        <div class="answer">Площадь прямоугольника: <p id="area-rectangle"></p>
+                        </div>
+                        <div class="answer">Периметр прямоугольника: <p id="perimeter-rectangle"></p>
+                        </div>
+                    </aside>
+                    <aside class="calculator">
+                        <h3 class="calculator__title">Площадь круга и длина окружности.</h3>
+                        <div class="inputs">
+                            <input type="text" value='' id="radius" placeholder="Ввести радиус круга...">
+                        </div>
+                        <div class="answer">Площадь круга: <p id="area-circle"></p>
+                        </div>
+                        <div class="answer">Длина окружности круга: <p id="circumference"></p>
+                        </div>
+                    </aside>
+                    <aside class="calculator">
+                        <h3 class="calculator__title">Площадь треугольника по трем сторонам.</h3>
+                        <div class="inputs">
+                            <input type="text" value='' id="first-side" placeholder="Ввести длинну первой стороны...">
+                            <input type="text" value='' id="second-side" placeholder="Ввести длинну второй стороны...">
+                            <input type="text" value='' id="third-side" placeholder="Ввести длинну третьей стороны...">
+                        </div>
+                        <div class="answer">Площадь треугольника: <p id="area-triangle"></p>
+                        </div>
+                    </aside>
+
+                </div>
+            </div>
+            <h2 class="main__title">Математические калькуляторы на JavaScript.</h2>
+            <div class="main__block">
+
+                <div class="main__content">
+                    <aside class="calculator">
+                        <h3 class="calculator__title">Корень квадратного уравнения.</h3>
+                        <div class="inputs">
+                            <input type="text" value='' id="first-num" placeholder="Ввести первое число...">
+                            <input type="text" value='' id="second-num" placeholder="Ввести второе число...">
+                            <input type="text" value='' id="third-num" placeholder="Ввести третье число...">
+                        </div>
+                        <div id="answer">Корень: <p id="root"></p>
+                        </div>
+                    </aside>
+                    <aside class="calculator">
+                        <h3 class="calculator__title">Проверка чисел на тройкой Пифагора.</h3>
+                        <div class="inputs">
+                            <input type="text" value='' id="first-pyth-num" placeholder="Ввести первое число...">
+                            <input type="text" value='' id="second-pyth-num" placeholder="Ввести второе число...">
+                            <input type="text" value='' id="third-pyth-num" placeholder="Ввести третье число...">
+                        </div>
+                        <div id="answer">Результат:
+                            <p id="pyth"></p>
+                        </div>
+                    </aside>
+                    <aside class="calculator">
+                        <h3 class="calculator__title">Поиск делителей числа</h3>
+                        <div class="inputs">
+                            <input type="text" value='' id="numberToSearch" placeholder="Ввести число...">
+                        </div>
+                        <button id="btnResultOfDivisors">getDivisors</button>
+                        <div id="divisorsOfNumber">Делители числа:
+                            <p id="resultOfDivisors"></p>
+                        </div>
+                    </aside>
+                    <aside class="calculator">
+                        <h3 class="calculator__title">Поиск общих делителей двух чисел.</h3>
+                        <div class="inputs">
+                            <input type="text" value='' id="firstNumberToSearch" placeholder="Ввести первое число...">
+                            <input type="text" value='' id="secondNumberToSearch" placeholder="Ввести второе число...">
+                        </div>
+                        <button id="btnResultOfTwoDivisors">getСommonDivisors</button>
+                        <div id="divisorsOfTwoNumber">Общие делители двух чисел:
+                            <p id="resultOfTwoDivisors"></p>
+                        </div>
+                    </aside>
+                    <aside class="calculator">
+                        <h3 class="calculator__title">Поиск наибольшего общего делителя трех чисел</h3>
+                        <div class="inputs">
+                            <input type="text" value='' id="firstOfThree" placeholder="Ввести первое число...">
+                            <input type="text" value='' id="secondOfThree" placeholder="Ввести второе число...">
+                            <input type="text" value='' id="thirdOfThree" placeholder="Ввести второе число...">
+                        </div>
+                        <button id="getBiggestDivisors">getNumber</button>
+                        <div id="divisorsOfThreeNumber">Наибольший делитель:
+                            <p id="resultOfBiggestDivisors"></p>
+                        </div>
+                    </aside>
+                    <aside class="calculator">
+                        <h3 class="calculator__title">Поиск наименьшего общего делителя трех чисел</h3>
+                        <div class="inputs">
+                            <input type="text" value='' id="firstOfThreeMin" placeholder="Ввести первое число...">
+                            <input type="text" value='' id="secondOfThreeMin" placeholder="Ввести второе число...">
+                            <input type="text" value='' id="thirdOfThreeMin" placeholder="Ввести второе число...">
+                        </div>
+                        <button id="getSmallestDivisors">getNumber</button>
+                        <div id="MinDivisorsOfThreeNumber">Наименьший делитель:
+                            <p id="resultOfSmallestDivisors"></p>
+                    </aside>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
