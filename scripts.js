@@ -38,9 +38,9 @@ const secondSide = document.querySelector('#second-side');
 const thirdSide = document.querySelector('#third-side');
 const areaTriangle = document.querySelector('#area-triangle');
 thirdSide.addEventListener('blur', function () {
-  let a = +firstSide.value;
-  let b = +secondSide.value;
-  let c = +thirdSide.value;
+  let a = firstSide.value;
+  let b = secondSide.value;
+  let c = thirdSide.value;
   let p = (a + b + c) / 2;
   areaTriangle.textContent = Math.sqrt(p * (p - a) * (p - b) * (p - c));
   firstSide.value = '';
